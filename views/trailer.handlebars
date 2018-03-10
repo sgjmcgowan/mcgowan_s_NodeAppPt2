@@ -1,0 +1,14 @@
+<!-- this page appears when a trailer is loaded, after clicking on a specific movie's thumbnail -->
+
+<h1>TRAILER PAGE</h1>
+
+{{#each filmData}}
+<h2>{{movies_title}}</h2>
+<video class="trailerPlayer" controls>
+ <source src="../videos/{{movie_trailer}}" type="video/mp4">
+ Your browser does not support this video.
+</video>
+
+<h4>Rating: {{movie_rating}}/10</h4>
+
+{{/each}}

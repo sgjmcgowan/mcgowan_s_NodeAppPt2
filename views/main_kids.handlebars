@@ -1,0 +1,14 @@
+<h1>{{ message }}</h1>
+<p>
+  we're on the kids page!
+</p>
+
+<ul>
+  {{#each genre1}}
+    <li>
+      <h4 class="title">{{ movie_title }}</h4>
+      <p class="runtime">Length: {{ movie_runtime }}</p>
+      <a href="/trailer/{{movie_id}}" class="videoThumb" id="{{movie_id}}"><img src="images/{{movie_cover}}"></a>
+    </li>
+  {{/each}}
+</ul>

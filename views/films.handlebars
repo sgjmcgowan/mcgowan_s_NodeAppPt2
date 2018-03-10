@@ -1,0 +1,19 @@
+
+<h1>{{ message }}</h1>
+<!-- <img src="images/{{ profile_pic }}"> -->
+
+<h3>Filter By:</h3>
+<a href="/filter/Action"><button>ACTION</button></a>
+<a href="/filter/Comedy"><button>COMEDY</button></a>
+<a href="/filter/Sci-Fi"><button>SCI-FI</button></a>
+<a href="/filter/Horror"><button>HORROR</button></a>
+
+<ul>
+  {{#each genre1}}
+    <li>
+      <h4 class="title">{{ movie_title }}</h4>
+      <p class="runtime">Length: {{ movie_runtime }}</p>
+      <a href="/trailer/{{movie_id}}" class="videoThumb" id="{{movie_id}}"><img src="images/{{movie_cover}}"></a>
+    </li>
+  {{/each}}
+</ul>
